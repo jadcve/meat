@@ -260,14 +260,14 @@ class ProductController extends Controller
             DB::commit();
 
             flash('el producto se agrego correctamente al carrito.')->success();
-            return redirect('product');
+            return redirect('product_list');
 
         }catch (\Exception $e) {
             DB::rollBack();
 
             flash('Error al agregar producto, intente mas tarde.')->error();
             //flash($e->getMessage())->error();
-            return redirect('product');
+            return redirect('product_list');
         }
     }
 

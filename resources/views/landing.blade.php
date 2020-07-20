@@ -1,5 +1,6 @@
 @extends('adminlte::page')
     @section('content')
+    @include('flash::message')
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
